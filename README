@@ -1,0 +1,12 @@
+# RAJVANSEE 🚀
+This is a modern web application built with **React** and **Vite**.
+
+## 🛠️ Tech Stack
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Styling:** CSS
+
+## ⚙️ How to Run Locally
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `npm run dev` to start the development server
