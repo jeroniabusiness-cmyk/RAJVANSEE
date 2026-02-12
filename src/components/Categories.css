@@ -22,30 +22,20 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.category-image-placeholder {
+.category-image-container {
     width: 100%;
     height: 100%;
+}
+
+.category-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.6s ease;
 }
 
-.category-card:hover .category-image-placeholder {
+.category-card:hover .category-img {
     transform: scale(1.05);
-}
-
-/* Specific gradients to mimic the vibe of the clothes */
-.category-img-wedding {
-    background: linear-gradient(45deg, #e6cba5, #5a4a32);
-    /* Gold/Cream vibe */
-}
-
-.category-img-festive {
-    background: linear-gradient(45deg, #d4af37, #c92a2a);
-    /* Gold/Red vibe */
-}
-
-.category-img-indowestern {
-    background: linear-gradient(45deg, #2c3e50, #bdc3c7);
-    /* Navy/Grey vibe */
 }
 
 .category-overlay {

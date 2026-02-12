@@ -35,8 +35,8 @@ const Contact = () => {
                         <Phone className="icon-gold" size={24} />
                         <div>
                             <h3>Call Us</h3>
-                            <p>+91 98765 43210</p>
-                            <p>+91 22 1234 5678</p>
+                            <p>+91 (Link in Bio)</p>
+                            <p>Customer Support</p>
                         </div>
                     </div>
                     <div className="info-item">

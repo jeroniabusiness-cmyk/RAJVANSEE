@@ -1,12 +1,16 @@
 import React from 'react';
 import { Heart, MessageCircle } from 'lucide-react';
+import img1 from '../assets/images/sherwani-ivory.jpg';
+import img2 from '../assets/images/bandhgala-blue.jpg';
+import img3 from '../assets/images/kurta-gold.jpg';
+import img4 from '../assets/images/sherwani-red-gold.jpg';
 import './InstagramFeed.css';
 
 const feedItems = [
-    { id: 1, likes: 1240, comments: 45, color: '#d4af37' },
-    { id: 2, likes: 890, comments: 23, color: '#c5a059' },
-    { id: 3, likes: 2100, comments: 112, color: '#a08d45' },
-    { id: 4, likes: 1500, comments: 67, color: '#8d7d35' },
+    { id: 1, likes: 1240, comments: 45, image: img1 },
+    { id: 2, likes: 890, comments: 23, image: img2 },
+    { id: 3, likes: 2100, comments: 112, image: img3 },
+    { id: 4, likes: 1500, comments: 67, image: img4 },
 ];
 
 const InstagramFeed = () => {
@@ -20,7 +24,8 @@ const InstagramFeed = () => {
 
                 <div className="insta-grid">
                     {feedItems.map((item) => (
-                        <div key={item.id} className="insta-card" style={{ backgroundColor: item.color }}>
+                        <div key={item.id} className="insta-card">
+                            <img src={item.image} alt="Instagram Post" className="insta-image" />
                             <div className="insta-overlay">
                                 <div className="insta-stat">
                                     <Heart size={20} /> <span>{item.likes}</span>

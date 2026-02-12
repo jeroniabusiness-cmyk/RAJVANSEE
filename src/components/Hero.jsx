@@ -1,17 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import heroBg from '../assets/images/sherwani-ivory.jpg';
 import './Hero.css';
 
 const Hero = () => {
     return (
         <section className="hero-section">
             <div className="hero-overlay"></div>
-            <div className="hero-background-placeholder">
-                {/* 
-                   In a real app, this would be a high-quality video or image.
-                   We'll use CSS to make this look premium.
-                */}
+            <div className="hero-background-placeholder" style={{ backgroundImage: `url(${heroBg})` }}>
             </div>
 
             <div className="container hero-content">

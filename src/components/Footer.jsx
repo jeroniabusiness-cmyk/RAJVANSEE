@@ -27,10 +27,7 @@ const Footer = () => {
                         <MapPin size={18} />
                         <span>Mumbai, India</span>
                     </div>
-                    <div className="contact-item">
-                        <Smartphone size={18} />
-                        <span>+91 98765 43210</span>
-                    </div>
+                    {/* Phone number removed as per request */}
                     <div className="social-links">
                         <a href="#" className="social-icon"><Instagram size={24} /></a>
                     </div>

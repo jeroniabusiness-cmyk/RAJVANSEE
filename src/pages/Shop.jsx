@@ -40,11 +40,12 @@ const Shop = () => {
                             transition={{ duration: 0.5 }}
                             whileHover={{ y: -5 }}
                         >
-                            <div
-                                className="product-image"
-                                style={{ background: product.image }}
-                            >
-                                {/* Image Placeholder */}
+                            <div className="product-image-container">
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    className="product-img"
+                                />
                             </div>
                             <div className="product-info">
                                 <h3>{product.name}</h3>

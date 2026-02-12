@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import imgWedding from '../assets/images/sherwani-ivory.jpg';
+import imgFestive from '../assets/images/kurta-gold.jpg';
+import imgIndoWestern from '../assets/images/kurta-purple.jpg';
 import './Categories.css';
 
 const categories = [
@@ -8,20 +11,19 @@ const categories = [
         id: 1,
         title: "Wedding Sherwanis",
         description: "Regal attire for your special day.",
-        // Placeholder gradient for image
-        imageClass: "category-img-wedding"
+        image: imgWedding
     },
     {
         id: 2,
         title: "Festive Kurtas",
         description: "Vibrant styles for every celebration.",
-        imageClass: "category-img-festive"
+        image: imgFestive
     },
     {
         id: 3,
         title: "Indo-Western",
         description: "Contemporary fusion for the modern man.",
-        imageClass: "category-img-indowestern"
+        image: imgIndoWestern
     }
 ];
 
@@ -42,7 +44,9 @@ const Categories = () => {
                             className="category-card"
                             whileHover={{ y: -10 }}
                         >
-                            <div className={`category-image-placeholder ${cat.imageClass}`}></div>
+                            <div className="category-image-container">
+                                <img src={cat.image} alt={cat.title} className="category-img" />
+                            </div>
                             <div className="category-overlay">
                                 <h3 className="category-title">{cat.title}</h3>
                                 <p className="category-desc">{cat.description}</p>
