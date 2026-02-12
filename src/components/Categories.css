@@ -1,0 +1,84 @@
+.categories-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-ivory);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.category-card {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-image-placeholder {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+}
+
+.category-card:hover .category-image-placeholder {
+    transform: scale(1.05);
+}
+
+/* Specific gradients to mimic the vibe of the clothes */
+.category-img-wedding {
+    background: linear-gradient(45deg, #e6cba5, #5a4a32);
+    /* Gold/Cream vibe */
+}
+
+.category-img-festive {
+    background: linear-gradient(45deg, #d4af37, #c92a2a);
+    /* Gold/Red vibe */
+}
+
+.category-img-indowestern {
+    background: linear-gradient(45deg, #2c3e50, #bdc3c7);
+    /* Navy/Grey vibe */
+}
+
+.category-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--spacing-md);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.category-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+    letter-spacing: 0.5px;
+}
+
+.category-desc {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: var(--spacing-sm);
+}
+
+.category-link {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid var(--color-antique-gold);
+    display: inline-block;
+    padding-bottom: 2px;
+    color: var(--color-antique-gold);
+}

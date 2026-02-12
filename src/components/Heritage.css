@@ -1,0 +1,48 @@
+.heritage-section {
+    padding: var(--spacing-xl) 0;
+    background-color: #Fdfcfb;
+    /* Slightly lighter than ivory for subtle contrast */
+    text-align: center;
+}
+
+.heritage-container {
+    max-width: 800px;
+    /* Narrower container for readability */
+}
+
+.heritage-label {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-antique-gold);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.heritage-headline {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: var(--spacing-md);
+}
+
+.heritage-divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-antique-gold);
+    margin: 0 auto var(--spacing-md) auto;
+}
+
+.heritage-text {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+@media (max-width: 768px) {
+    .heritage-headline {
+        font-size: 2.2rem;
+    }
+}

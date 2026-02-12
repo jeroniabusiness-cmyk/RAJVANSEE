@@ -1,0 +1,120 @@
+.footer-section {
+    background-color: var(--color-charcoal);
+    color: #d1d1d1;
+    padding: var(--spacing-xl) 0 var(--spacing-md) 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.brand-col {
+    flex: 1.5;
+}
+
+.footer-logo {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--color-antique-gold);
+    margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+    font-family: var(--font-sans);
+    opacity: 0.8;
+}
+
+.footer-col h3 {
+    font-family: var(--font-serif);
+    color: var(--color-white);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.links-col ul {
+    list-style: none;
+}
+
+.links-col li {
+    margin-bottom: 0.8rem;
+}
+
+.links-col a {
+    transition: color 0.3s ease;
+}
+
+.links-col a:hover {
+    color: var(--color-antique-gold);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    color: var(--color-white);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--color-antique-gold);
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #444;
+    color: white;
+    border-radius: 2px;
+    flex: 1;
+}
+
+.newsletter-form button {
+    background: var(--color-antique-gold);
+    color: white;
+    padding: 0 15px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.whatsapp-cta {
+    width: 100%;
+    background-color: #25D366;
+    /* WhatsApp Green */
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: var(--spacing-md);
+    font-size: 0.85rem;
+    opacity: 0.6;
+}

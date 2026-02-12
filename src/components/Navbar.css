@@ -1,0 +1,144 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding: 2rem 0;
+    color: var(--color-white);
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1rem 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    color: var(--color-charcoal);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.desktop-nav ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.desktop-nav a {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: inherit;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.desktop-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-antique-gold);
+    transition: width 0.3s ease;
+}
+
+.desktop-nav a:hover::after {
+    width: 100%;
+}
+
+.desktop-nav a:hover {
+    color: var(--color-antique-gold);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon {
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.icon:hover {
+    color: var(--color-antique-gold);
+    transform: scale(1.1);
+}
+
+.mobile-toggle {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    /* Ensure it stays above mobile menu */
+}
+
+/* Mobile Styling */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-ivory);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.mobile-menu a {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--color-charcoal);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: var(--color-antique-gold);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .navbar {
+        padding: 1.5rem 0;
+    }
+}
